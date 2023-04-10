@@ -30,7 +30,7 @@
             if(message.id == socket.id){
                 $('.messages').append('<div class="sendmessage">' + message.message + '</div>');
             }else{
-                $('.messages').append('<div class="receivedmessage"><strong>' + message.author + ': </strong>' + message.message + '</div>');
+                $('.messages').append('<div class="receivedmessage"><strong class="author">' + message.author + '</strong>'+ '<br>' + message.message + '</div>');
             }
         };
 
